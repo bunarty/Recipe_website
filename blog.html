@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Solomon Bashir, 30014453">
+    <meta name="description" content="SweetCakes Recipes website made with HTML5, CSS3, Bootstrap 4 and Jquery">
+    <title>Sweet Cakes</title>
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/sweetcakesfaviconandlogo.png">
+</head>
+
+<body>
+    <!--Logo and Main Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/sweetcakesfaviconandlogo.png">&nbsp; SweetCakes</a>
+            <!--Hamburger button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <!-- collapsable navigation-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <!--Drop-down sub menu items in main navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="true">Help</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="faqs.html">FAQs</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="location.html">Find Us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About SweetCakes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--jumbotron-->
+    <div class="jumbotron parallax blog-parallax-image">
+        <h1 class="display-3" style="color:saddlebrown">SweetCakes Blog</h1>
+    </div>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+                <h3 class="pb-3 mb-4 border-bottom">
+                    From SweetCakes Bakery
+                </h3>
+                <!--Gradient Banner-->
+                <div class="gradientbanner">
+                    <h3>The Best Cakes, Pastries and Confectioneries Recipes Site</h3><br>
+                    <br>
+                </div>
+                <!-- blog-posts -->
+                <article class="blog-posts">
+                    <section id="inspiration">
+                        <h2 class="blog-post-title">3 quick and easy snacks</h2>
+                        <p class="blog-post-meta">March 1, 2021 </p>
+                        <p>Apple doughnuts<br>
+                            Slice an apple into discs, about ½cm thick, through the core. Use a small cookie cutter or apple corer to make a hole in the centre and remove any pips. Spread cream cheese over the slices, and top with raisins, flaked almonds or sprinkles.</p>
+
+                        <p>Yogurt bark<br>
+                            Spread some natural yogurt over a tray lined with baking parchment – don’t make it too thin. Scatter over some halved raspberries and blueberries (fresh or frozen) and freeze until solid. Break into shards to serve.<br>
+
+                        <p>Celery boats<br>
+                            Fill the cavities of celery batons with nut butter, and arrange some raisins on top.</p>
+                    </section>
+                    <p>category - inspiration</p>
+                    <hr>
+                    <section id="decorative-ideas">
+                        <h2 class="blog-post-title">How to create a marble effect using icing and a toothpick</h2>
+                        <p class="blog-post-meta">December 23, 2020 </p>
+                        <p> Sieve some icing sugar into a bowl and gradually add a few teaspoons of cold water to create a drippy consistency icing. Now do the same thing again, but add some colour or cocoa powder to help the icing contrast.<br>
+                            Add one of your icing mixtures to a piping bag (this is the one you will use to draw the lines). Fasten the loose end with an elastic band and place upright in a tall empty glass. Pour the other icing over your cake (if using cupcakes, spoon liberally onto cupcakes until you flood the paper case completely) then chop the tip off your piping bag and make straight vertical lines up and down your cake/cupcakes and now using that ever-so-handy toothpick, lightly run it from left to right without lifting until you get to the end of your cake and there you have it, a beautiful and delicate mille feuille inspired look created in a few minutes tops.<br>
+                        </p>
+                    </section>
+                    <p>category - decorative ideas</p>
+                </article>
+            </div>
+
+            <aside class="col-md-4 blog-sidebar">
+                <div class="p-3 mb-3 bg-light rounded">
+                    <h4>Blog Categories</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#inspiration">Inspirations</a></li>
+                        <li><a href="#decorative-ideas">Decorative ideas</a></li>
+                    </ol>
+                </div>
+
+                <div class="p-3 mb-3 bg-light rounded">
+                    <h4>Blog Info</h4>
+                    <p class="mb-0">Decorative ideas and inspirations from Sweetcakes blog is free for public use. </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <!-- Footer-->
+    <footer>
+        <div class="container-fluid">
+            <!--Grid row-->
+            <div class="row text-left">
+                <!--Grid column-->
+                <div class="col-md-4"><br>
+                    <img src="images/sweetcakesfaviconandlogo.png">&nbsp; SweetCakes
+                    <br>
+                    <br>
+                    <p> Here at SweetCakes we like to think of each other as family and our success is because we held on to our family values. We have extended the family circle to include our customers. When we make our products, we put in a lot of care, which explains why our recipes are phenomenal Now you can make your own sweetcakes cakes pasteries and confectioneries at home </p>
+                </div>
+                <!--Grid column-->
+                <div class=" col-md-4"><br>
+                    <div class="links">
+                        <p>Quick Links</p>
+                        <hr class="light">
+                        <a href="index.html" role="button">Homepage</a><br>
+                        <a href="recipes.html" role="button">Recipes</a><br>
+                        <a href="blog.html" role="button">Blog</a><br>
+                        <a href="faqs.html" role="button">FAQs</a><br>
+                        <a href="location.html" role="button">Find Us</a><br>
+                        <a href="about.html" role="button">About Us</a><br>
+                    </div>
+                </div>
+                <!--Grid column-->
+                <div class=" col-md-4"><br>
+                    <p>Contact Us</p>
+                    <hr class="light">
+                    +44 00 0000 0000<br>
+                    <p>sweetcakes@bakery.co.uk</p>
+                    Bakery Street<br>
+                    SweetCakes City, SW33 0CS
+                </div>
+                <!-- Copyright -->
+                <div class="copyright">
+                    <hr class="light">
+                    <div class="text-center p-3">© 2020 Copyright:&nbsp; <a href="about.html">SweetCakes Bakery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

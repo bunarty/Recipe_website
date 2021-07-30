@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Solomon Bashir, 30014453">
+    <meta name="description" content="SweetCakes Recipes website made with HTML5, CSS3, Bootstrap 4 and Jquery">
+    <title>Sweet Cakes</title>
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/sweetcakesfaviconandlogo.png">
+</head>
+
+<body>
+    <!--Logo and Main Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/sweetcakesfaviconandlogo.png">&nbsp; SweetCakes</a>
+            <!--Hamburger button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <!-- collapsable navigation-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <!--Drop-down sub menu items in main navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="true">Help</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="faqs.html">FAQs</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="location.html">Find Us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About SweetCakes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Carousel-->
+    <section id="slideshow" class="carousel slide" data-ride="carousel">
+        <!--Carousel indicators-->
+        <ul class="carousel-indicators">
+            <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+            <li data-target="#slideshow" data-slide-to="1"></li>
+            <li data-target="#slideshow" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <!--First slide-->
+            <div class="carousel-item active">
+                <img src="images/slide1.png" alt="slide1" width="1536" height="300">
+                <div class="carousel-caption">
+                    <h3>Welcome to SweetCakes</h3>
+                    <p>A great site to learn how to bake cakes and more.&nbsp; <a class="btn btn-outline-light" href="about.html">Learn more</a></p>
+                </div>
+            </div>
+            <!--Second slide-->
+            <div class="carousel-item">
+                <img src="images/slide2.png" alt="slide2" width="1536" height="300">
+                <div class="carousel-caption">
+                    <h3>Yummy Cakes!!</h3>
+                    <p>Check out our recipes.&nbsp; <a class="btn btn-outline-light " href="recipes.html">See Recipies</a></p>
+                </div>
+            </div>
+            <!--Third slide-->
+            <div class="carousel-item">
+                <img src="images/slide3.png" alt="slide3" width="1536" height="300">
+                <div class="carousel-caption">
+                    <h3>Joy with SweetCakes confectioneries</h3>
+                    <p>Check out our blog.&nbsp; <a class="btn btn-outline-light" href="blog.html">See Blog</a></p>
+                </div>
+            </div>
+        </div>
+        <!--Carousel previous control-->
+        <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <!--Carousel next control-->
+        <a class="carousel-control-next" href="#slideshow" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </section>
+
+    <!--Gradient Banner-->
+    <div class="gradientbanner">
+        <h3>The Best Cakes, Pastries and Confectioneries Recipes Site</h3>
+    </div>
+    <!--thumbnails-->
+    <section class="thumbnails">
+        <!--first thumbnail-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="img-thumbnail img-responsive"><img src="images/recipes.png" alt="" height="100%" width="100%" />
+                    <div class="caption">
+                        <h4>SweetCakes Recipes</h4>
+
+                        <p>Discover our selection of all-time favourite bakes. Whether you fancy making bread, brownies, cookies, cakes or tarts, we've got the perfect recipe for every occasion. All our cakes are baked with traditional ingredients as you would use if baking at home.</p>
+
+                        <p><a class="btn btn-default" href="recipes.html" role="button">See Recipes </a></p>
+                    </div>
+                </div>
+            </div>
+            <!--second thumbnail-->
+            <div class="col-md-4">
+                <div class="img-thumbnail" class="img-responsive"><img src="images/sweetcakes.png" alt="" height="100%" width="100%" />
+                    <div class="caption">
+                        <h4>SweetCakes Blog</h4>
+
+                        <p>
+                        <p>Welcome to Sweet Cakes Blog, our online journal where you can find answers related to your baking questions or curiousity. Please visit our blog where you can . It only takes a few seconds and is totally free. You'll be able to see current and updated information about SweetCakes baking.</p>
+
+                        <p><a class="btn btn-default" href="blog.html" role="button">See Blog </a></p>
+                    </div>
+                </div>
+            </div>
+            <!--third thumbnail-->
+            <div class="col-md-4">
+                <div class="img-thumbnail" class="img-responsive"><img src="images/icecream.png" alt="" height="100%" width="100%" />
+                    <div class="caption">
+                        <h4>SweetCakes Locations</h4>
+
+                        <p>Our cakes are suitable for everyone and we also bake with our own recipe products are gluten/wheat dairy free. All our cakes are baked with traditional ingredients as you would use if baking at home. </p>
+
+                        <p><a class="btn btn-default" href="location.html" role="button">Visit Us </a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--video besides text-->
+        <br>
+        <div class="img-thumbnail">
+            <div class=row>
+                <div class="col-md-6">
+                    <video width="100%" height="100%" controls>
+                        <source src="videos/video.mp4" type="video/mp4">
+                        <source src="videos/video.ogv" type="video/ogv">
+                        <source src="videos/video.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <p>SweetCakes specialises in exquisitely hand-crafted, premium celebration cakes for any occasion. We have a team of highly skilled cake designers and decorators who can create a truly personalised and memorable cake which is bound to delight at your special occasion. We have have two shops, one based in the historic city of Oxford, the other in the market town of Banbury. Our shops are regularly featured in both local and national images. Our cakes are made from the highest quality ingredients sourced fresh from the best UK producers, many of which we have been working in partnership with since the business began.
+                    <p>
+                    <p><a class="btn btn-default" href="about.html" role="button">Learn more</a>
+                    <p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p>&nbsp;</p>
+    <!-- Footer-->
+    <footer>
+        <div class="container-fluid">
+            <!--Grid row-->
+            <div class="row text-left">
+                <!--Grid column-->
+                <div class="col-md-4"><br>
+                    <img src="images/sweetcakesfaviconandlogo.png">&nbsp; SweetCakes
+                    <br>
+                    <br>
+                    <p> Here at SweetCakes we like to think of each other as family and our success is because we held on to our family values. We have extended the family circle to include our customers. When we make our products, we put in a lot of care, which explains why our recipes are phenomenal Now you can make your own sweetcakes cakes pasteries and confectioneries at home </p>
+                </div>
+                <!--Grid column-->
+                <div class=" col-md-4"><br>
+                    <div class="links">
+                        <p>Quick Links</p>
+                        <hr class="light">
+                        <a href="index.html" role="button">Homepage</a><br>
+                        <a href="recipes.html" role="button">Recipes</a><br>
+                        <a href="blog.html" role="button">Blog</a><br>
+                        <a href="faqs.html" role="button">FAQs</a><br>
+                        <a href="location.html" role="button">Find Us</a><br>
+                        <a href="about.html" role="button">About Us</a><br>
+                    </div>
+                </div>
+                <!--Grid column-->
+                <div class=" col-md-4"><br>
+                    <p>Contact Us</p>
+                    <hr class="light">
+                    +44 00 0000 0000<br>
+                    <p>sweetcakes@bakery.co.uk</p>
+                    Bakery Street<br>
+                    SweetCakes City, SW33 0CS
+                </div>
+                <!-- Copyright -->
+                <div class="copyright">
+                    <hr class="light">
+                    <div class="text-center p-3">© 2020 Copyright:&nbsp; <a href="about.html">SweetCakes Bakery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to top button -->
+    <a id="back-to-top-btn"></a>
+    <script>
+        var btn = $('#back-to-top-btn');
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 350) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '350');
+        });
+    </script>
+</body>
+
+</html>

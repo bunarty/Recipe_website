@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Solomon Bashir, 30014453">
+    <meta name="description" content="SweetCakes Recipes website made with HTML5, CSS3, Bootstrap 4 and Jquery">
+    <title>Sweet Cakes</title>
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/sweetcakesfaviconandlogo.png">
+</head>
+
+<body>
+    <!--Logo and Main Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/sweetcakesfaviconandlogo.png">&nbsp; SweetCakes</a>
+            <!--Hamburger button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <!-- collapsable navigation-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <!--Dropdown sub-menu items in main navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="true">Help</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="faqs.html">FAQs</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="location.html">Find Us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About SweetCakes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--jumbotron-->
+    <div class="jumbotron parallax recipes-parallax-image">
+        <h1 class="display-3" style="color:mintcream">SweetCakes Recipes</h1>
+    </div>
+    <!--Recipes-->
+    <main>
+        <div class="container text-center recipes">
+            <!--cake recipes-->
+            <h2>Cake Recipes</h2>
+            <hr />
+            <div class="row gutters">
+                <div class=col-md-6>
+                    <div class="card text-dark">
+                        <h4>Cheese cake</h4>
+                        <p>Follow our step-by-step recipe for this easy no-cook cheesecake – a delicious summer dessert for all occasions </p>
+                        <!-- button to trigger modal pop up -->
+                        <button type="button" class="btn " data-toggle="modal" data-target="#CakeRecipe1" align="right">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cheese cake recipe modal content -->
+                <div class="modal fade" id="CakeRecipe1" tabindex="-1" role="dialog" aria-labelledby="CakeRecipeTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Making Cheese cake</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/cheesecake.png" align="left" width="100%" height="100%">
+                                <b>Ingredients</b>
+                                <p> biscuits<br>
+                                    100g butter, melted<br>
+                                    1 vanilla pod <br>
+                                    600g full fat soft cheese <br>
+                                    100g icing sugar<br>
+                                    284ml pot of double cream<br>
+                                    For the topping<br>
+                                    400g punnet of strawberries, halved<br>
+                                    25g icing sugar<br></p>
+
+                                <b>Method</b>
+                                <p>STEP 1<br>
+                                    To make the base, butter and line a 23cm loose-bottomed tin with baking parchment. Put the digestive biscuits in a plastic food bag and crush to crumbs using a rolling pin. Transfer the crumbs to a bowl, then pour over the melted butter. Mix thoroughly until the crumbs are completely coated. Tip them into the prepared tin and press firmly down into the base to create an even layer. Chill in the fridge for 1 hr to set firmly.</p>
+
+                                <p>STEP 2<br>
+                                    Slice the vanilla pod in half lengthways, leaving the tip intact, so that the two halves are still joined. Holding onto the tip of the pod, scrape out the seeds using the back of a kitchen knife.</p>
+
+                                <p>STEP 3<br>
+                                    Pour the double cream into a bowl and whisk with an electric mixer until it’s just starting to thicken to soft peaks. Place the soft cheese, icing sugar and the vanilla seeds in a separate bowl, then beat for 2 mins with an electric mixer until smooth and starting to thicken, it will get thin and then start to thicken again. Tip in the double cream and fold it into the soft cheese mix. You’re looking for it to be thickened enough to hold its shape when you tip a spoon of it upside down. If it’s not thick enough, continue to whisk. Spoon onto the biscuit base, starting from the edges and working inwards, making sure that there are no air bubbles. Smooth the top of the cheesecake down with the back of a dessert spoon or spatula. Leave to set in the fridge overnight.</p>
+
+                                <p>STEP 4<br>
+                                    Bring the cheesecake to room temperature about 30 mins before serving. To remove it from the tin, place the base on top of a can, then gradually pull the sides of the tin down. Slip the cake onto a serving plate, removing the lining paper and base. Purée half the strawberries in a blender or food processor with the icing sugar and 1 tsp water, then sieve. Pile the remaining strawberries onto the cake, and pour the purée over the top.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=col-md-6>
+                    <div class="card text-dark">
+                        <h4>Chocolate sponge cake</h4>
+                        <p>Check out our quick and easy chocolate sponge recipe, using a super simple, all-in-one method. Serve this moist chocolate cake with an extra dollop of cream for ultra indulgence</p>
+                        <!-- button to trigger modal pop up -->
+                        <button type="button" class="btn " data-toggle="modal" data-target="#CakeRecipe2" align="right">
+                            Read More
+                        </button>
+
+                        <!-- Chocolate sponge cake recipe modal content -->
+                        <div class="modal fade" id="CakeRecipe2" tabindex="-1" role="dialog" aria-labelledby="CakeRecipeTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content text-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Making Chocolate sponge cake</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/chocolatecake.png" align="left" width="100%" height="100%">
+                                        <b>Ingredients</b>
+                                        <p>self-raising flour 175g<br>
+                                            70% cocoa powder 3 tbsp<br>
+                                            unsalted butter 175g, softened completely<br>
+                                            golden caster sugar 175g<br>
+                                            baking powder 1 tsp<br>
+                                            eggs 3<br>
+                                            milk 1-2 tbsp <br>
+                                            double cream 300ml pot<br>
+                                            <b>Ganache Icing</b><br>
+                                            butter 100g, cubed<br>
+                                            dark chocolate 100g chopped, plus extra to decorate<br>
+                                        </p>
+                                        <b>Method</b>
+                                        <p>STEP 1 <br>
+                                            Heat the oven to 180c/fan160c/gas4. Line and butter 2 x 18cm sandwich tins. Beat the cake ingredients (not the double cream) together in a bowl, add the milk if the mixture is too stiff – it should drop off a spoon when tapped. Divide the mixture between the tins and level the tops.</p>
+                                        <p>STEP 2<br>
+                                            Bake on the same shelf for 20-25minutes or until the sponges are risen, slightly shrunk away from the edge of the tin and spring back when lightly pressed. Leave to cool for 5 minutes then turn out onto a rack and peel off the paper. Cool completely before filling.</p>
+                                        <p>STEP 3<br>
+                                            To make the icing, melt the butter and chocolate together in a microwave, or in a bowl set over a pan of simmering water. Stir well, then leave until it’s cool enough to spread easily and will run a little.</p>
+                                        <p>STEP 4<br>
+                                            Whip the cream and use it to sandwich together the cakes. Spread chocolate ganache over the top of the cake, letting some run over the edge. Decorate with chocolate curls.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--pastries recipes-->
+            <h2>Pastries Recipes</h2>
+            <hr />
+            <div class="row gutters">
+                <div class=col-md-6>
+                    <div class="card text-dark">
+                        <h4>Cinnamon rolls</h4>
+                        <p>Try these easy cinnamon rolls with vanilla icing as a treat for afternoon tea. They're delicious served warm or cold – you can also make them ahead and freeze</p>
+                        <!-- button to trigger modal pop up -->
+                        <button type="button" class="btn " data-toggle="modal" data-target="#PastriesRecipe1" align="right">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cinnamon rolls Recipe Modal content -->
+                <div class="modal fade" id="PastriesRecipe1" tabindex="-1" role="dialog" aria-labelledby="PastriesRecipeTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Making Cinnamon rolls</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/cinnamonrolls.png" align="left" width="100%" height="100%">
+                                <b>Ingredients</b>
+                                <p>300g self-raising flour<br>
+                                    2 tbsp caster sugar<br>
+                                    1 tsp ground cinnamon<br>
+                                    70g butter, melted, plus extra for greasing<br>
+                                    2 egg yolks<br>
+                                    130ml milk, plus extra for glazing<br>
+                                    <b>For the filling</b><br>
+                                    1 tsp ground cinnamon<br>
+                                    55g light brown soft sugar<br>
+                                    2 tbsp caster sugar<br>
+                                    40g butter, melted<br>
+                                    <b>For the icing</b><br>
+                                    60g icing sugar<br>
+                                    1 tbsp cream cheese, softened<br>
+                                    ½ tbsp butter, softened<br>
+                                    ½ tsp vanilla essence<br>
+                                </p>
+                                <b>Method</b>
+                                <p>STEP 1<br>
+                                    Heat oven to 180C/fan 160C/gas 4. Grease a 20cm loose-bottomed cake tin and line the bottom with baking parchment. Mix the flour, caster sugar and cinnamon together with a pinch of salt in a bowl. Whisk the butter, egg yolks and milk together and combine with the dry ingredients to make a soft dough. Turn out onto a floured surface and roll out to a rectangle, about 30 x 25cm.</p>
+
+                                <p>STEP 2<br>
+                                    Mix the filling ingredients together. Spread evenly over the dough then roll it up lengthways, like a Swiss roll, to form a log. Using a sharp knife, cut the dough into 8 even-sized slices and pack into the prepared tin. Brush gently with extra milk and bake for 30-35 mins or until golden brown. Remove from the oven and cool for 5 mins before removing from the tin.</p>
+
+                                <p>STEP 3<br>
+                                    Sift the icing sugar into a large bowl and make a well in the centre. Place the cream cheese and butter in the centre, pour over 2 tbsp boiling water, and stir to mix. Add a little more water until you have a drizzly consistency. Stir in the vanilla essence, then drizzle the icing over the rolls. Serve warm or cold.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=col-md-6>
+                    <div class="card text-dark">
+                        <h4>Raspberry macarons</h4>
+                        <p>Bake our heavenly raspberry macarons for afternoon tea, or as the final flourish for a dinner party. They taste as gorgeous as they look </p>
+                        <!-- button to trigger modal pop up -->
+                        <button type="button" class="btn " data-toggle="modal" data-target="#PastriesRecipe2" align="right">
+                            Read More
+                        </button>
+
+                        <!--Raspberry macarons Recipe Modal content -->
+                        <div class="modal fade" id="PastriesRecipe2" tabindex="-1" role="dialog" aria-labelledby="PastriesRecipeTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content text-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Making Raspberry macarons</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/macarons.png" align="left" width="100%" height="100%">
+                                        <b>Ingredients</b>
+                                        <p> 4 large egg whites<br>
+                                            300g icing sugar<br>
+                                            pink or red food colouring<br>
+                                            140g ground almonds<br>
+                                            ½ a 250g tub mascarpone<br>
+                                            4-5 tbsp raspberry jam<br></p>
+                                        <b>Method</b>
+                                        <p>STEP 1<br>
+                                            Whisk the egg whites in a large, clean bowl until soft peaks form. Whisk in the icing sugar in 3 or 4 batches, whisking well between each addition. Add a couple of drops of colouring with the final addition of sugar. Keep whisking until the mixture is light pink, with no streaks, and is thick and glossy, a bit like shaving foam.</p>
+
+                                        <p>STEP 2<br>
+                                            Using a large metal spoon, gently fold through the ground almonds. Cover 4 baking sheets with baking parchment and dab a little of the mixture in the corners of each sheet to secure paper. If you don’t have enough baking sheets, make and cook half the quantity, then repeat. Use 2 spoons or a piping bag fitted with a wide nozzle to make 40 circles, each about 5cm wide. Leave to sit out for about 10 mins until a skin starts to form.</p>
+
+                                        <p>STEP 3<br>
+                                            Heat oven to 180C/160C fan/gas 4. Place the baking sheets in the oven, leaving the oven door slightly ajar to allow steam to escape, then bake for 20-25 mins until just crisp, but not browned. Leave to cool.</p>
+
+                                        <p>STEP 4<br>
+                                            When ready to serve, gently ease off the paper with a palette knife. Carefully spread 1 tsp raspberry jam per biscuit over half of the biscuits and 1 tsp mascarpone per biscuit over the other halves, then gently sandwich together.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--confectioneries recipes-->
+            <h2>Confectioneries Recipes</h2>
+            <hr />
+            <div class="row gutters">
+                <div class=col-md-6>
+                    <div class="card text-dark">
+                        <h4>Mocha milkshake</h4>
+                        <p>A decadent iced coffee for a sunny afternoon. Serve in tall glasses for a retro treat </p>
+                        <!-- button to trigger modal pop up -->
+                        <button type="button" class="btn " data-toggle="modal" data-target="#ConfectioneriesRecipe1" align="right">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mocha milkshake Recipe Modal content -->
+                <div class="modal fade" id="ConfectioneriesRecipe1" tabindex="-1" role="dialog" aria-labelledby="ConfectioneriesRecipeTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Making Mocha milkshake</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/mochamilkshakes.png" align="left" width="100%" height="50%">
+                                <b>Ingredients</b>
+                                <p>85g plain chocolate , 70% or 80%<br>
+                                    1 tbsp coffee granules<br>
+                                    700ml milk<br>
+                                    4 scoops vanilla ice cream , plus extra to serve (optional)<br></p>
+                                <b>Method</b>
+                                <p>STEP 1<br>
+                                    Roughly chop 75g of the chocolate and put into a large jug with the coffee. Bring 300ml of the milk just to the boil, then pour over the chocolate and coffee mix, stirring to melt. Once melted, cool.</p>
+
+                                <p>STEP 2<br>
+                                    Tip the cooled mocha milk into the blender with the ice cream and remaining milk. Blitz until blended, then pour into 4 tall glasses. Add an extra scoop of ice cream to each, if you like, then grate a little of the remaining chocolate on top.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=col-md-6>
+                    <div class="card text-dark">
+                        <h4>Strawberry ice cream</h4>
+                        <p>Use sweet strawberries whilst they’re in season to make this fabulous homemade strawberry ice cream. It's perfect on its own or as an accompaniment dessert </p>
+                        <!-- button to trigger modal pop up -->
+                        <button type="button" class="btn " data-toggle="modal" data-target="#ConfectioneriesRecipe2" align="right">
+                            Read More
+                        </button>
+
+                        <!-- Strawberry ice cream Recipe Modal content -->
+                        <div class="modal fade" id="ConfectioneriesRecipe2" tabindex="-1" role="dialog" aria-labelledby="ConfectioneriesRecipeTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content text-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Making Strawberry ice cream</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/strawberryicecream.png" align="left" width="100%" height="100%">
+                                        <b> Ingredients </b>
+                                        <p>400g strawberries , stalks removed<br>
+                                            1-2 tsp lemon juice<br>
+                                            600ml double cream<br>
+                                            300ml whole milk<br>
+                                            150g white caster sugar<br>
+                                            5 egg yolks<br>
+                                            2 tsp vanilla extract<br></p>
+                                        <b> Method</b>
+                                        <p> STEP 1<br>
+                                            Put the strawberries in a food processor or blender. Whizz to a purée, then add the lemon juice to taste – if the strawberries are quite tart you’ll only need a little.</p>
+
+                                        <p> STEP 2<br>
+                                            Warm the cream and milk in a pan until just steaming, not boiling. Whisk the sugar and egg yolks in a bowl for a minute or two until pale yellow. Slowly pour the hot cream mixture into the eggs, whisking as you do. Once fully incorporated, strain through a sieve back into the pan. Gently cook over a low-medium heat until it thickens slightly – it should coat the back of your spoon and leave a channel if you run your finger through it (this will happen at about 82-85C). Be careful not to overcook it as the eggs will scramble. Transfer to a bowl. Cover and cool for 10 mins, then chill for 1 hr.</p>
+
+                                        <p> STEP 3<br>
+                                            Stir the strawberry purée and vanilla through the cold custard. Taste to see if it needs a little more lemon or vanilla.</p>
+
+                                        <p>STEP 4<br>
+                                            Freeze the ice cream in an ice cream maker, or container in the freezer. If you don’t have an ice cream maker, freeze for 4 hrs, whisking vigorously or blending in a food processor every hour to remove any ice crystals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer-->
+    <footer>
+        <div class="container-fluid">
+            <!--Grid row-->
+            <div class="row text-left">
+                <!--Grid column-->
+                <div class="col-md-4"><br>
+                    <img src="images/sweetcakesfaviconandlogo.png">&nbsp; SweetCakes
+                    <br>
+                    <br>
+                    <p> Here at SweetCakes we like to think of each other as family and our success is because we held on to our family values. We have extended the family circle to include our customers. When we make our products, we put in a lot of care, which explains why our recipes are phenomenal Now you can make your own sweetcakes cakes pasteries and confectioneries at home </p>
+                </div>
+                <!--Grid column-->
+                <div class=" col-md-4"><br>
+                    <div class="links">
+                        <p>Quick Links</p>
+                        <hr class="light">
+                        <a href="index.html" role="button">Homepage</a><br>
+                        <a href="recipes.html" role="button">Recipes</a><br>
+                        <a href="blog.html" role="button">Blog</a><br>
+                        <a href="faqs.html" role="button">FAQs</a><br>
+                        <a href="location.html" role="button">Find Us</a><br>
+                        <a href="about.html" role="button">About Us</a><br>
+                    </div>
+                </div>
+                <!--Grid column-->
+                <div class=" col-md-4"><br>
+                    <p>Contact Us</p>
+                    <hr class="light">
+                    +44 00 0000 0000<br>
+                    <p>sweetcakes@bakery.co.uk</p>
+                    Bakery Street<br>
+                    SweetCakes City, SW33 0CS
+                </div>
+                <!-- Copyright -->
+                <div class="copyright">
+                    <hr class="light">
+                    <div class="text-center p-3">© 2020 Copyright:&nbsp; <a href="about.html">SweetCakes Bakery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

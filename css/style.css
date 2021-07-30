@@ -1,0 +1,300 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: Delius, 'Open Sans', sans-serif;
+    line-height: 1.3;
+    font-weight: normal;
+    color: whitesmoke;
+    background-color: burlywood;
+    height: 100%;
+
+}
+
+/********************Main Navigation**********/
+
+
+.dropdown-item:active {
+    background-color: lightcoral;
+    color: whitesmoke;
+}
+
+/********************Footer**********/
+footer {
+    margin-top: 2px;
+    position: static;
+    background-color: saddlebrown;
+}
+
+.links {
+    margin-left: 20px;
+}
+
+.links a {
+    color: lightcoral;
+}
+
+.copyright {
+    width: 100%;
+}
+
+.copyright a {
+    color: lightcoral;
+}
+
+.copyright hr {
+    height: 1px;
+    background-color: floralwhite;
+    border: none;
+}
+
+
+/********************index.html page**********/
+
+/*Carousel*/
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    color: whitesmoke;
+}
+
+
+/*Carousel buttons*/
+.btn-outline-light:hover {
+    background-color: lightpink;
+    color: whitesmoke;
+}
+
+/*Thumbnails*/
+
+.thumbnails {
+    color: black;
+}
+
+.img-fluid img-thumbnail {
+    height: auto;
+    max-width: 100%;
+}
+
+/*Thumbnail buttons*/
+
+.btn-default {
+    border-color: lightpink;
+    color: black;
+    margin-top: 10px;
+}
+
+.btn-default:hover {
+    background-color: lightpink;
+    color: whitesmoke;
+}
+
+.btn-default:focus {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+/*Back to top button*/
+#back-to-top-btn {
+    display: inline-block;
+    background-color: lightcoral;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+#back-to-top-btn::after {
+    content: "top";
+    font-style: normal;
+    font-size: 1em;
+    line-height: 50px;
+    color: white;
+}
+
+#back-to-top-btn:hover {
+    cursor: pointer;
+    background-color: sandybrown;
+}
+
+#back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/********************recipes.html page**********/
+.recipes {
+    margin: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipes h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/*Modal buttons*/
+button.btn {
+    outline: 0;
+    box-shadow: none;
+    color: lightcoral;
+    border-color: lightcoral;
+}
+
+button.btn:focus {
+    box-shadow: none;
+    color: floralwhite;
+    background-color: lightcoral;
+
+}
+
+button.btn:hover {
+    box-shadow: none;
+    color: floralwhite;
+    background-color: lightcoral;
+
+}
+
+/********************blog.html page**********/
+.blog-sidebar {
+    background-color: darksalmon;
+    padding: 2%;
+    border-radius: 5px;
+    color: black;
+}
+
+.blog-sidebar a {
+    text-decoration: none;
+    color: lightcoral;
+}
+
+/********************faqs.html page**********/
+
+.ui-accordion .ui-accordion-header {
+    background-color: burlywood;
+    border-bottom-color: floralwhite;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+.ui-accordion .ui-accordion-content {
+    background-color: floralwhite;
+}
+
+.ui-accordion .ui-accordion-content a {
+    text-decoration: none;
+    color: lightcoral;
+}
+
+
+/********************location.html page**********/
+.address-and-google-maps {
+    padding: 10px;
+    margin: 5px;
+    text-align: center
+}
+
+/********************about.html page**********/
+
+/* Animated Canvas Banner*/
+#animation_container {
+    margin: auto;
+}
+
+/*Portfolio*/
+.gallery {
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(0.1) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+.gallery img:hover {
+    filter: grayscale(0);
+}
+
+/********************All pages except about.html page**********/
+/*Gradient banner*/
+.gradientbanner {
+    height: 10%;
+    background-image: linear-gradient(to right, whitesmoke, deeppink);
+    text-align: center;
+    color: whitesmoke;
+    padding: 0.5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/********************All pages except index.html**********/
+/*jumbotron*/
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.jumbotron .h1,
+.jumbotron h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+/*Parallax scrolling effect*/
+.parallax {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*jumbotron images*/
+.recipes-parallax-image {
+    background-image: url("/SweetCakes/images/recipes.png");
+}
+
+.blog-parallax-image {
+    background-image: url("/SweetCakes/images/sweetcakes.png");
+
+}
+
+.faqs-parallax-image {
+    background-image: url("/SweetCakes/images/donut.png")
+}
+
+.location-parallax-image {
+    background-image: url("/SweetCakes/images/icecream.png");
+
+}
+
+.about-parallax-image {
+    background-image: url("/SweetCakes/images/cakebackground.png");
+
+}

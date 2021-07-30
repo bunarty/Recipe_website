@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Solomon Bashir, 30014453">
+    <meta name="description" content="SweetCakes Recipes website made with HTML5, CSS3, Bootstrap 4 and Jquery">
+    <title>Sweet Cakes</title>
+  
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/sweetcakesfaviconandlogo.png">
+    <script>
+        window.onload = function() {
+            $("#accordion").accordion();
+        };
+    </script>
+</head>
+
+<body>
+    <!--Logo and Main Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/sweetcakesfaviconandlogo.png">&nbsp; SweetCakes</a>
+            <!--Hamburger button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <!-- collapsable navigation-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <!--Drop-down sub menu items in main navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="true">Help</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="faqs.html">FAQs</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="location.html">Find Us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About SweetCakes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--jumbotron-->
+    <div class="jumbotron parallax faqs-parallax-image">
+        <h1 class="display-3" style="color: floralwhite"> SweetCakes FAQs</h1>
+    </div>
+    <!--Gradient Banner-->
+    <div class="gradientbanner">
+        <h3>The Best Cakes, Pastries and Confectioneries Recipes Site</h3>
+    </div>
+    <!--FAQs Dropdown accordion-->
+    <section id="accordion">
+
+        <h3><a href="#">I'm just getting into baking. Where do I start ?</a></h3>
+        <div>
+            <p>Find recipes that excite you study the instructions and start baking! There are many good recipe for beginners on our website, on the <a href="recipes.html">recipes page</a>. It is important to find a recipe that you enjoy and then make it!. Look for opportunities to bake. With each time you bake, you learn something new and get a little bit better.</p>
+        </div>
+        <h3><a href="#">Decorative ideas - How do I prevent tall cakes from leaning ?</a></h3>
+        <div>
+            <p>The best way to prevent leaning cakes is to level your cakes so each layer is totally flat. Get eye level with each layer you stack and frost to make sure it’s level.</p>
+        </div>
+        <h3><a href="#">What are the biggest beginner mistakes when baking</a></h3>
+        <div>
+            <p>One of the biggest mistakes beginner bakers make is not reading the recipe and instructions thoroughly. Make sure you have all the ingredients you need and aren’t trying to substitute anything last minute. Also make sure you’ve read through the instructions ahead of time so you know how long everything takes to make. Rushing through the baking and decorating process makes the whole experience much more stressful. Plan ahead! You can even prep ahead of time making it easier to start at the required time.</p>
+        </div>
+        <h3><a href="#">Allergy Information</a></h3>
+        <div>
+            <p>It is important to read through the recipes. It is adviceable to assume that the recipe contains gluten, dairy unless specified.Feel free to tweak recipes to your dietary requirements </p>
+        </div>
+        <h3><a href="#"> Does SweetCakes offer Baking lessons ?</a></h3>
+        <div>
+            <p>Yes this is available. If you are interested. You can <a href="location.html">contact us</a> via our email address and/or phone numbers or come visit us in any of our shops to sign up for Baking lessons. </p>
+        </div>
+
+    </section>
+
+    <!-- Footer-->
+    <footer>
+        <div class="container-fluid">
+            <!--Grid row-->
+            <div class="row text-left">
+                <!--Grid column-->
+                <div class="col-md-4"><br>
+                    <img src="images/sweetcakesfaviconandlogo.png">&nbsp; SweetCakes
+                    <br>
+                    <br>
+                    <p> Here at SweetCakes we like to think of each other as family and our success is because we held on to our family values. We have extended the family circle to include our customers. When we make our products, we put in a lot of care, which explains why our recipes are phenomenal Now you can make your own sweetcakes cakes pasteries and confectioneries at home </p>
+                </div>
+                <!--Grid column-->
+                <div class=" col-md-4"><br>
+                    <div class="links">
+                        <p>Quick Links</p>
+                        <hr class="light">
+                        <a href="index.html" role="button">Homepage</a><br>
+                        <a href="recipes.html" role="button">Recipes</a><br>
+                        <a href="blog.html" role="button">Blog</a><br>
+                        <a href="faqs.html" role="button">FAQs</a><br>
+                        <a href="location.html" role="button">Find Us</a><br>
+                        <a href="about.html" role="button">About Us</a><br>
+                    </div>
+                </div>
+                <!--Grid column-->
+                <div class=" col-md-4"><br>
+                    <p>Contact Us</p>
+                    <hr class="light">
+                    +44 00 0000 0000<br>
+                    <p>sweetcakes@bakery.co.uk</p>
+                    Bakery Street<br>
+                    SweetCakes City, SW33 0CS
+                </div>
+                <!-- Copyright -->
+                <div class="copyright">
+                    <hr class="light">
+                    <div class="text-center p-3">© 2020 Copyright:&nbsp; <a href="about.html">SweetCakes Bakery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

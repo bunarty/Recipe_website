@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Solomon Bashir, 30014453">
+    <meta name="description" content="SweetCakes Recipes website made with HTML5, CSS3, Bootstrap 4 and Jquery">
+    <title>Sweet Cakes</title>
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/sweetcakesfaviconandlogo.png">
+   
+    <script>
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+
+        function init() {
+            canvas = document.getElementById("canvas");
+            anim_container = document.getElementById("animation_container");
+            dom_overlay_container = document.getElementById("dom_overlay_container");
+            var comp = AdobeAn.getComposition("891C9C45E006BC4FAE9596704BFA58DE");
+            var lib = comp.getLibrary();
+            var loader = new createjs.LoadQueue(false);
+            loader.addEventListener("fileload", function(evt) {
+                handleFileLoad(evt, comp)
+            });
+            loader.addEventListener("complete", function(evt) {
+                handleComplete(evt, comp)
+            });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+
+        function handleFileLoad(evt, comp) {
+            var images = comp.getImages();
+            if (evt && (evt.item.type == "image")) {
+                images[evt.item.id] = evt.result;
+            }
+        }
+
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({
+                    "images": [queue.getResult(ssMetadata[i].name)],
+                    "frames": ssMetadata[i].frames
+                })
+            }
+            exportRoot = new lib.banner();
+            stage = new lib.Stage(canvas);
+            //Registers the "tick" event listener.
+            fnStartAnimation = function() {
+                stage.addChild(exportRoot);
+                createjs.Ticker.framerate = lib.properties.fps;
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            AdobeAn.makeResponsive(true, 'both', false, 1, [canvas, anim_container, dom_overlay_container]);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    </script>
+</head>
+
+<body onload="init();" style="margin:0px;">
+    <!--Logo and Main Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/sweetcakesfaviconandlogo.png">&nbsp; SweetCakes</a>
+            <!--Hamburger button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <!-- collapsable navigation-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <!--Drop-down sub menu items in main navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="true">Help</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="faqs.html">FAQs</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="location.html">Find Us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About SweetCakes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--jumbotron-->
+    <div class="jumbotron parallax about-parallax-image">
+        
+        <h1 class="display-3" style="color: saddlebrown">About SweetCakes</h1>
+    </div>
+    <!--Animated Canvas Banner-->
+    <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:100%; height:100%">
+        <canvas id="canvas" width="100%" height="100%" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:100%; height:100%; position: absolute; left: 0px; top: 0px; display: block;">
+        </div>
+    </div>
+    <!-- Gallery -->
+    <section class=gallery>
+        <h4> Sweet Cakes Portfolio</h4>
+        <p> Check out Product made with SweetCakes Recipes</p>
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <a href="images/mochamilkshakes.png">
+                    <img src="images/mochamilkshakes.png" class="w-100 shadow-1-strong rounded mb-4" />
+                </a>
+
+                <a href="images/2icecreamcups.png">
+                    <img src="images/2icecreamcups.png" class="w-100 shadow-1-strong rounded mb-4" />
+                </a>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <a href="images/3layersdonut.png">
+                    <img src="images/3layersdonut.png" class="w-100 shadow-1-strong rounded mb-4" />
+                </a>
+
+                <a href="images/choclatechipcupcake.png">
+                    <img src="images/choclatechipcupcake.png" class="w-100 shadow-1-strong rounded mb-4" />
+                </a>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <a href="images/croissants.png">
+                    <img src="images/croissants.png" class="w-100 shadow-1-strong rounded mb-4" />
+                </a>
+
+                <a href="images/assortedicecream.png">
+                    <img src="images/assortedicecream.png" class="w-100 shadow-1-strong rounded mb-4" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer>
+        <div class="container-fluid">
+            <!--Grid row-->
+            <div class="row text-left">
+                <!--Grid column-->
+                <div class="col-md-4"><br>
+                    <img src="images/sweetcakesfaviconandlogo.png">&nbsp; SweetCakes
+                    <br>
+                    <br>
+                    <p> Here at SweetCakes we like to think of each other as family and our success is because we held on to our family values. We have extended the family circle to include our customers. When we make our products, we put in a lot of care, which explains why our recipes are phenomenal Now you can make your own sweetcakes cakes pasteries and confectioneries at home </p>
+                </div>
+                <!--Grid column-->
+                <div class=" col-md-4"><br>
+                    <div class="links">
+                        <p>Quick Links</p>
+                        <hr class="light">
+                        <a href="index.html" role="button">Homepage</a><br>
+                        <a href="recipes.html" role="button">Recipes</a><br>
+                        <a href="blog.html" role="button">Blog</a><br>
+                        <a href="faqs.html" role="button">FAQs</a><br>
+                        <a href="location.html" role="button">Find Us</a><br>
+                        <a href="about.html" role="button">About Us</a><br>
+                    </div>
+                </div>
+                <!--Grid column-->
+                <div class=" col-md-4"><br>
+                    <p>Contact Us</p>
+                    <hr class="light">
+                    +44 00 0000 0000<br>
+                    <p>sweetcakes@bakery.co.uk</p>
+                    Bakery Street<br>
+                    SweetCakes City, SW33 0CS
+                </div>
+                <!-- Copyright -->
+                <div class="copyright">
+                    <hr class="light">
+                    <div class="text-center p-3">© 2020 Copyright:&nbsp; <a href="about.html">SweetCakes Bakery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!--animated banner script head tags-->
+    <script src="js/createjs.js"></script>
+    <script src="js/banner.js"></script>
+</body>
+
+</html>
