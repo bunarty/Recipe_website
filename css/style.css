@@ -266,8 +266,8 @@ button.btn:hover {
     color: whitesmoke;
 }
 
-/*Parallax scrolling effect*/
-.parallax {
+/*Parallax scrolling effect on jumbotron images*/
+img.parallax {
     min-height: 500px;
     background-attachment: fixed;
     background-size: cover;
