@@ -258,43 +258,32 @@ button.btn:hover {
 /*jumbotron*/
 .jumbotron {
     margin-bottom: 0;
+    padding: 0;
 }
 
 .jumbotron .h1,
 .jumbotron h1 {
     text-align: center;
     color: whitesmoke;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+
 }
 
 /*Parallax scrolling effect on jumbotron images*/
-img.parallax {
-    min-height: 500px;
+.parallax,
+.parallax img {
     background-attachment: fixed;
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
+    background-color: burlywood;
 }
 
-/*jumbotron images*/
-.recipes-parallax-image {
-    background-image: url(.\Recipie_website\images\recipes.png);
-}
 
-.blog-parallax-image {
-    background-image: url("./Recipie_website/images/sweetcakes.png");
 
-}
 
-.faqs-parallax-image {
-    background-image: url("./Recipie_website/images/donut.png")
-}
-
-.location-parallax-image {
-    background-image: url("./Recipie_website/images/icecream.png");
-
-}
-
-.about-parallax-image {
-    background-image: url(./images/cakebackground.png);
-
-}
