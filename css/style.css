@@ -277,7 +277,7 @@ button.btn:hover {
 
 /*jumbotron images*/
 .recipes-parallax-image {
-    background-image: url("./Recipie_website/images/recipes.png");
+    background-image: url(.\Recipie_website\images\recipes.png);
 }
 
 .blog-parallax-image {
