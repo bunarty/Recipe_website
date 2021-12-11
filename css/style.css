@@ -277,24 +277,24 @@ button.btn:hover {
 
 /*jumbotron images*/
 .recipes-parallax-image {
-    background-image: url("/SweetCakes/images/recipes.png");
+    background-image: url("/images/recipes.png");
 }
 
 .blog-parallax-image {
-    background-image: url("/SweetCakes/images/sweetcakes.png");
+    background-image: url("/images/sweetcakes.png");
 
 }
 
 .faqs-parallax-image {
-    background-image: url("/SweetCakes/images/donut.png")
+    background-image: url("/images/donut.png")
 }
 
 .location-parallax-image {
-    background-image: url("/SweetCakes/images/icecream.png");
+    background-image: url("/images/icecream.png");
 
 }
 
 .about-parallax-image {
-    background-image: url("/SweetCakes/images/cakebackground.png");
+    background-image: url("/images/cakebackground.png");
 
 }
